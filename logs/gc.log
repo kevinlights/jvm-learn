@@ -1,0 +1,55 @@
+Java HotSpot(TM) 64-Bit Server VM (25.191-b12) for windows-amd64 JRE (1.8.0_191-b12), built on Oct  6 2018 09:29:03 by "java_re" with MS VC++ 10.0 (VS2010)
+Memory: 4k page, physical 16654768k(9184088k free), swap 19145136k(8500304k free)
+CommandLine flags: -XX:InitialHeapSize=266476288 -XX:MaxHeapSize=4263620608 -XX:+PrintGC -XX:+PrintGCApplicationConcurrentTime -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintHeapAtGC -XX:+PrintReferenceGC -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:-UseLargePagesIndividualAllocation -XX:+UseParallelGC 
+0.137: Application time: 0.0059198 seconds
+{Heap before GC invocations=1 (full 0):
+ PSYoungGen      total 76288K, used 10109K [0x000000076b400000, 0x0000000770900000, 0x00000007c0000000)
+  eden space 65536K, 15% used [0x000000076b400000,0x000000076bddf660,0x000000076f400000)
+  from space 10752K, 0% used [0x000000076fe80000,0x000000076fe80000,0x0000000770900000)
+  to   space 10752K, 0% used [0x000000076f400000,0x000000076f400000,0x000000076fe80000)
+ ParOldGen       total 175104K, used 0K [0x00000006c1c00000, 0x00000006cc700000, 0x000000076b400000)
+  object space 175104K, 0% used [0x00000006c1c00000,0x00000006c1c00000,0x00000006cc700000)
+ Metaspace       used 3195K, capacity 4496K, committed 4864K, reserved 1056768K
+  class space    used 346K, capacity 388K, committed 512K, reserved 1048576K
+0.137: [GC (System.gc()) 0.138: [SoftReference, 0 refs, 0.0000543 secs]0.138: [WeakReference, 11 refs, 0.0000140 secs]0.138: [FinalReference, 69 refs, 0.0000622 secs]0.138: [PhantomReference, 0 refs, 0 refs, 0.0000299 secs]0.138: [JNI Weak Reference, 0.0000143 secs][PSYoungGen: 10109K->904K(76288K)] 10109K->912K(251392K), 0.0012689 secs] [Times: user=0.11 sys=0.00, real=0.01 secs] 
+Heap after GC invocations=1 (full 0):
+ PSYoungGen      total 76288K, used 904K [0x000000076b400000, 0x0000000770900000, 0x00000007c0000000)
+  eden space 65536K, 0% used [0x000000076b400000,0x000000076b400000,0x000000076f400000)
+  from space 10752K, 8% used [0x000000076f400000,0x000000076f4e2020,0x000000076fe80000)
+  to   space 10752K, 0% used [0x000000076fe80000,0x000000076fe80000,0x0000000770900000)
+ ParOldGen       total 175104K, used 8K [0x00000006c1c00000, 0x00000006cc700000, 0x000000076b400000)
+  object space 175104K, 0% used [0x00000006c1c00000,0x00000006c1c02000,0x00000006cc700000)
+ Metaspace       used 3195K, capacity 4496K, committed 4864K, reserved 1056768K
+  class space    used 346K, capacity 388K, committed 512K, reserved 1048576K
+}
+{Heap before GC invocations=2 (full 1):
+ PSYoungGen      total 76288K, used 904K [0x000000076b400000, 0x0000000770900000, 0x00000007c0000000)
+  eden space 65536K, 0% used [0x000000076b400000,0x000000076b400000,0x000000076f400000)
+  from space 10752K, 8% used [0x000000076f400000,0x000000076f4e2020,0x000000076fe80000)
+  to   space 10752K, 0% used [0x000000076fe80000,0x000000076fe80000,0x0000000770900000)
+ ParOldGen       total 175104K, used 8K [0x00000006c1c00000, 0x00000006cc700000, 0x000000076b400000)
+  object space 175104K, 0% used [0x00000006c1c00000,0x00000006c1c02000,0x00000006cc700000)
+ Metaspace       used 3195K, capacity 4496K, committed 4864K, reserved 1056768K
+  class space    used 346K, capacity 388K, committed 512K, reserved 1048576K
+0.139: [Full GC (System.gc()) 0.139: [SoftReference, 0 refs, 0.0000383 secs]0.139: [WeakReference, 3 refs, 0.0000086 secs]0.139: [FinalReference, 0 refs, 0.0000075 secs]0.140: [PhantomReference, 0 refs, 0 refs, 0.0000076 secs]0.140: [JNI Weak Reference, 0.0000067 secs][PSYoungGen: 904K->0K(76288K)] [ParOldGen: 8K->671K(175104K)] 912K->671K(251392K), [Metaspace: 3195K->3195K(1056768K)], 0.0049173 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+Heap after GC invocations=2 (full 1):
+ PSYoungGen      total 76288K, used 0K [0x000000076b400000, 0x0000000770900000, 0x00000007c0000000)
+  eden space 65536K, 0% used [0x000000076b400000,0x000000076b400000,0x000000076f400000)
+  from space 10752K, 0% used [0x000000076f400000,0x000000076f400000,0x000000076fe80000)
+  to   space 10752K, 0% used [0x000000076fe80000,0x000000076fe80000,0x0000000770900000)
+ ParOldGen       total 175104K, used 671K [0x00000006c1c00000, 0x00000006cc700000, 0x000000076b400000)
+  object space 175104K, 0% used [0x00000006c1c00000,0x00000006c1ca7e78,0x00000006cc700000)
+ Metaspace       used 3195K, capacity 4496K, committed 4864K, reserved 1056768K
+  class space    used 346K, capacity 388K, committed 512K, reserved 1048576K
+}
+0.144: Total time for which application threads were stopped: 0.0065476 seconds, Stopping threads took: 0.0000322 seconds
+Heap
+ PSYoungGen      total 76288K, used 655K [0x000000076b400000, 0x0000000770900000, 0x00000007c0000000)
+  eden space 65536K, 1% used [0x000000076b400000,0x000000076b4a3ee8,0x000000076f400000)
+  from space 10752K, 0% used [0x000000076f400000,0x000000076f400000,0x000000076fe80000)
+  to   space 10752K, 0% used [0x000000076fe80000,0x000000076fe80000,0x0000000770900000)
+ ParOldGen       total 175104K, used 671K [0x00000006c1c00000, 0x00000006cc700000, 0x000000076b400000)
+  object space 175104K, 0% used [0x00000006c1c00000,0x00000006c1ca7e78,0x00000006cc700000)
+ Metaspace       used 3201K, capacity 4496K, committed 4864K, reserved 1056768K
+  class space    used 347K, capacity 388K, committed 512K, reserved 1048576K
+0.144: Application time: 0.0004628 seconds
