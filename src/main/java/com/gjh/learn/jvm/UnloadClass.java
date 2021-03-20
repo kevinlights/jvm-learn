@@ -7,8 +7,6 @@ import jdk.internal.org.objectweb.asm.Opcodes;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import static jdk.internal.org.objectweb.asm.Opcodes.*;
-
 /**
  * created on 2021/3/20
  *
