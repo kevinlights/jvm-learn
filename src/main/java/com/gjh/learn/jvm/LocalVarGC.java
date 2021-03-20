@@ -62,6 +62,6 @@ public class LocalVarGC {
 
     public static void main(String[] args) {
         LocalVarGC localVarGC = new LocalVarGC();
-        localVarGC.localvarGc5();
+        localVarGC.localvarGc4();
     }
 }
