@@ -1,8 +1,8 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="SoftRef" type="Application" factoryName="Application" nameIsGenerated="true">
-    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.SoftRef" />
+  <configuration default="false" name="TraceCanReliveObj" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.TraceCanReliveObj" />
     <module name="jvm-learn" />
-    <option name="VM_PARAMETERS" value="-Xmx10m -XX:+PrintGCDetails" />
+    <option name="VM_PARAMETERS" value="-Xmx10m" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.gjh.learn.jvm.*" />
