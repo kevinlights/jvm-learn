@@ -35,6 +35,38 @@ public class Print {
     public static final String LIGHT_BLUE_HIGH = "\033[96m%s\033[0m";
     public static final String GREY_HIGH = "\033[97m%s\033[0m";
 
+    public static void BLACK(Object obj, Object... args) {
+        println(BLACK, String.valueOf(obj), args);
+    }
+
+    public static void RED(Object obj, Object... args) {
+        println(RED, String.valueOf(obj), args);
+    }
+
+    public static void GREEN(Object obj, Object... args) {
+        println(GREEN, String.valueOf(obj), args);
+    }
+
+    public static void YELLOW(Object obj, Object... args) {
+        println(YELLOW, String.valueOf(obj), args);
+    }
+
+    public static void BLUE(Object obj, Object... args) {
+        println(BLUE, String.valueOf(obj), args);
+    }
+
+    public static void PURPLE(Object obj, Object... args) {
+        println(PURPLE, String.valueOf(obj), args);
+    }
+
+    public static void LIGHT_BLUE(Object obj, Object... args) {
+        println(LIGHT_BLUE, String.valueOf(obj), args);
+    }
+
+    public static void GREY(Object obj, Object... args) {
+        println(GREY, String.valueOf(obj), args);
+    }
+
     public static void BLACK(String msg, Object... args) {
         println(BLACK, msg, args);
     }
