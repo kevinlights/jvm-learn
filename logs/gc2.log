@@ -1,49 +1,81 @@
-Java HotSpot(TM) 64-Bit Server VM (25.191-b12) for windows-amd64 JRE (1.8.0_191-b12), built on Oct  6 2018 09:29:03 by "java_re" with MS VC++ 10.0 (VS2010)
-Memory: 4k page, physical 16654768k(10620356k free), swap 19145136k(10670688k free)
-CommandLine flags: -XX:InitialHeapSize=1073741824 -XX:MaxHeapSize=1073741824 -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:-UseLargePagesIndividualAllocation -XX:+UseParallelGC 
-5.892: [GC (Allocation Failure) [PSYoungGen: 262144K->43496K(305664K)] 262144K->230117K(1005056K), 0.0765619 secs] [Times: user=0.17 sys=0.20, real=0.07 secs] 
-11.917: [GC (Allocation Failure) [PSYoungGen: 305640K->43504K(305664K)] 492261K->479517K(1005056K), 0.0748885 secs] [Times: user=0.51 sys=0.09, real=0.07 secs] 
-11.993: [Full GC (Ergonomics) [PSYoungGen: 43504K->0K(305664K)] [ParOldGen: 436013K->477298K(699392K)] 479517K->477298K(1005056K), [Metaspace: 4101K->4101K(1056768K)], 0.3540596 secs] [Times: user=1.99 sys=0.09, real=0.35 secs] 
-18.410: [Full GC (Ergonomics) [PSYoungGen: 262144K->32203K(305664K)] [ParOldGen: 477298K->698979K(699392K)] 739442K->731183K(1005056K), [Metaspace: 4115K->4115K(1056768K)], 0.2871946 secs] [Times: user=1.77 sys=0.13, real=0.28 secs] 
-23.866: [Full GC (Ergonomics) [PSYoungGen: 262144K->252409K(305664K)] [ParOldGen: 698979K->698978K(699392K)] 961123K->951388K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.4533562 secs] [Times: user=3.03 sys=0.02, real=0.45 secs] 
-24.521: [Full GC (Ergonomics) [PSYoungGen: 262144K->261400K(305664K)] [ParOldGen: 698978K->698978K(699392K)] 961122K->960379K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3260040 secs] [Times: user=2.20 sys=0.00, real=0.32 secs] 
-24.857: [Full GC (Ergonomics) [PSYoungGen: 262144K->261671K(305664K)] [ParOldGen: 698978K->698978K(699392K)] 961122K->960650K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3248425 secs] [Times: user=2.52 sys=0.00, real=0.32 secs] 
-25.187: [Full GC (Ergonomics) [PSYoungGen: 262144K->261837K(305664K)] [ParOldGen: 698978K->698978K(699392K)] 961122K->960816K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3243960 secs] [Times: user=2.34 sys=0.00, real=0.32 secs] 
-25.516: [Full GC (Ergonomics) [PSYoungGen: 262144K->261943K(305664K)] [ParOldGen: 698978K->698978K(699392K)] 961122K->960922K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3232164 secs] [Times: user=2.34 sys=0.00, real=0.32 secs] 
-25.840: [Full GC (Ergonomics) [PSYoungGen: 262144K->262014K(305664K)] [ParOldGen: 698978K->698978K(699392K)] 961122K->960993K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3243433 secs] [Times: user=2.41 sys=0.00, real=0.31 secs] 
-26.167: [Full GC (Ergonomics) [PSYoungGen: 262144K->262059K(305664K)] [ParOldGen: 698978K->698978K(699392K)] 961122K->961038K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3267650 secs] [Times: user=2.52 sys=0.00, real=0.32 secs] 
-26.494: [Full GC (Ergonomics) [PSYoungGen: 262144K->262089K(305664K)] [ParOldGen: 698978K->698978K(699392K)] 961122K->961068K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3242937 secs] [Times: user=2.28 sys=0.00, real=0.33 secs] 
-26.818: [Full GC (Ergonomics) [PSYoungGen: 262144K->262108K(305664K)] [ParOldGen: 698978K->698978K(699392K)] 961122K->961087K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3232308 secs] [Times: user=2.41 sys=0.00, real=0.32 secs] 
-27.141: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 698978K->698978K(699392K)] 961122K->961122K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3219070 secs] [Times: user=2.36 sys=0.00, real=0.32 secs] 
-27.463: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 698978K->698978K(699392K)] 961122K->961122K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3226445 secs] [Times: user=2.28 sys=0.00, real=0.32 secs] 
-27.786: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 698991K->698991K(699392K)] 961135K->961135K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3227762 secs] [Times: user=2.39 sys=0.00, real=0.32 secs] 
-28.109: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 698991K->698991K(699392K)] 961135K->961135K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3238081 secs] [Times: user=2.47 sys=0.00, real=0.32 secs] 
-28.433: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 699001K->699000K(699392K)] 961145K->961144K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3235574 secs] [Times: user=2.50 sys=0.00, real=0.32 secs] 
-28.757: [Full GC (Ergonomics) [PSYoungGen: 262143K->262143K(305664K)] [ParOldGen: 699000K->699000K(699392K)] 961144K->961144K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3226128 secs] [Times: user=2.39 sys=0.00, real=0.32 secs] 
-29.080: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 699013K->699013K(699392K)] 961157K->961156K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3250525 secs] [Times: user=2.48 sys=0.00, real=0.32 secs] 
-29.405: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 699025K->699025K(699392K)] 961169K->961168K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3231581 secs] [Times: user=2.36 sys=0.00, real=0.32 secs] 
-29.728: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 699025K->699025K(699392K)] 961169K->961168K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3235217 secs] [Times: user=2.28 sys=0.02, real=0.33 secs] 
-30.052: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 699025K->699024K(699392K)] 961169K->961168K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3228587 secs] [Times: user=2.39 sys=0.00, real=0.32 secs] 
-30.375: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 699037K->699037K(699392K)] 961181K->961181K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3238961 secs] [Times: user=2.48 sys=0.00, real=0.32 secs] 
-30.699: [Full GC (Ergonomics) [PSYoungGen: 262143K->262143K(305664K)] [ParOldGen: 699049K->699048K(699392K)] 961193K->961192K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3231289 secs] [Times: user=2.38 sys=0.02, real=0.32 secs] 
-31.022: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 699058K->699057K(699392K)] 961202K->961201K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3244521 secs] [Times: user=2.27 sys=0.00, real=0.32 secs] 
-31.347: [Full GC (Ergonomics) [PSYoungGen: 262143K->262143K(305664K)] [ParOldGen: 699069K->699069K(699392K)] 961213K->961213K(1005056K), [Metaspace: 4137K->4137K(1056768K)], 0.3238127 secs] [Times: user=2.39 sys=0.00, real=0.33 secs] 
-31.671: [Full GC (Ergonomics) [PSYoungGen: 262143K->262143K(305664K)] [ParOldGen: 699081K->699081K(699392K)] 961225K->961225K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3237949 secs] [Times: user=2.44 sys=0.00, real=0.32 secs] 
-31.995: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 699081K->699081K(699392K)] 961225K->961225K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3241023 secs] [Times: user=2.38 sys=0.00, real=0.32 secs] 
-32.319: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 699093K->699093K(699392K)] 961237K->961237K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3235538 secs] [Times: user=2.03 sys=0.00, real=0.33 secs] 
-32.643: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 699105K->699105K(699392K)] 961249K->961249K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3271096 secs] [Times: user=2.48 sys=0.00, real=0.33 secs] 
-32.970: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 699115K->699114K(699392K)] 961259K->961258K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3231443 secs] [Times: user=2.36 sys=0.00, real=0.32 secs] 
-33.294: [Full GC (Ergonomics) [PSYoungGen: 262143K->262143K(305664K)] [ParOldGen: 699114K->699114K(699392K)] 961258K->961258K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3230754 secs] [Times: user=2.48 sys=0.00, real=0.32 secs] 
-33.617: [Full GC (Ergonomics) [PSYoungGen: 262144K->262144K(305664K)] [ParOldGen: 699126K->699126K(699392K)] 961270K->961270K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3237008 secs] [Times: user=2.39 sys=0.00, real=0.32 secs] 
-33.941: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 699137K->699136K(699392K)] 961281K->961280K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3235443 secs] [Times: user=2.34 sys=0.00, real=0.32 secs] 
-34.265: [Full GC (Ergonomics) [PSYoungGen: 262143K->262143K(305664K)] [ParOldGen: 699148K->699148K(699392K)] 961292K->961292K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3230637 secs] [Times: user=2.47 sys=0.01, real=0.32 secs] 
-34.588: [Full GC (Ergonomics) [PSYoungGen: 262143K->262143K(305664K)] [ParOldGen: 699160K->699160K(699392K)] 961304K->961304K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3236839 secs] [Times: user=2.41 sys=0.00, real=0.33 secs] 
-34.912: [Full GC (Ergonomics) [PSYoungGen: 262144K->262144K(305664K)] [ParOldGen: 699160K->699160K(699392K)] 961304K->961304K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3223579 secs] [Times: user=2.36 sys=0.00, real=0.32 secs] 
-35.234: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 699171K->699171K(699392K)] 961315K->961315K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3234053 secs] [Times: user=2.34 sys=0.00, real=0.32 secs] 
-35.558: [Full GC (Ergonomics) [PSYoungGen: 262144K->262144K(305664K)] [ParOldGen: 699171K->699171K(699392K)] 961315K->961315K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3235444 secs] [Times: user=2.39 sys=0.00, real=0.32 secs] 
-35.881: [Full GC (Ergonomics) [PSYoungGen: 262144K->262143K(305664K)] [ParOldGen: 699183K->699182K(699392K)] 961327K->961326K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3225447 secs] [Times: user=2.41 sys=0.00, real=0.32 secs] 
-36.204: [Full GC (Ergonomics) [PSYoungGen: 262144K->262144K(305664K)] [ParOldGen: 699194K->699194K(699392K)] 961338K->961338K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3241718 secs] [Times: user=2.39 sys=0.00, real=0.32 secs] 
-36.529: [Full GC (Ergonomics) [PSYoungGen: 262144K->262144K(305664K)] [ParOldGen: 699206K->699131K(699392K)] 961350K->961275K(1005056K), [Metaspace: 4138K->4138K(1056768K)], 0.3644607 secs] [Times: user=2.66 sys=0.00, real=0.36 secs] 
-36.894: [Full GC (Ergonomics) [PSYoungGen: 262144K->262144K(305664K)] [ParOldGen: 699148K->699131K(699392K)] 961292K->961275K(1005056K), [Metaspace: 4161K->4161K(1056768K)], 0.3240179 secs] [Times: user=2.47 sys=0.00, real=0.33 secs] 
-37.218: [Full GC (Ergonomics) [PSYoungGen: 262144K->262144K(305664K)] [ParOldGen: 699134K->699133K(699392K)] 961278K->961277K(1005056K), [Metaspace: 4162K->4162K(1056768K)], 0.3566176 secs] [Times: user=2.50 sys=0.00, real=0.36 secs] 
-37.575: [Full GC (Ergonomics) [PSYoungGen: 262144K->0K(305664K)] [ParOldGen: 699136K->1036K(699392K)] 961280K->1036K(1005056K), [Metaspace: 4163K->4163K(1056768K)], 0.0083265 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] 
+[0.044s][info][gc] Using G1
+[1.739s][info][gc] GC(0) Pause Young (G1 Evacuation Pause) 52M->47M(1024M) 28.017ms
+[3.204s][info][gc] GC(1) Pause Young (G1 Evacuation Pause) 93M->94M(1024M) 16.515ms
+[4.665s][info][gc] GC(2) Pause Young (G1 Evacuation Pause) 141M->142M(1024M) 14.989ms
+[6.141s][info][gc] GC(3) Pause Young (G1 Evacuation Pause) 186M->188M(1024M) 15.622ms
+[7.649s][info][gc] GC(4) Pause Young (G1 Evacuation Pause) 237M->238M(1024M) 18.426ms
+[9.101s][info][gc] GC(5) Pause Young (G1 Evacuation Pause) 282M->283M(1024M) 16.000ms
+[10.502s][info][gc] GC(6) Pause Young (G1 Evacuation Pause) 327M->329M(1024M) 17.374ms
+[12.245s][info][gc] GC(7) Pause Young (G1 Evacuation Pause) 382M->383M(1024M) 21.338ms
+[14.361s][info][gc] GC(8) Pause Young (G1 Evacuation Pause) 448M->450M(1024M) 21.858ms
+[17.003s][info][gc] GC(9) Pause Young (G1 Evacuation Pause) 539M->540M(1024M) 30.611ms
+[20.403s][info][gc] GC(10) Pause Initial Mark (G1 Evacuation Pause) 645M->646M(1024M) 38.549ms
+[20.403s][info][gc] GC(11) Concurrent Cycle
+[20.523s][info][gc] GC(11) Pause Remark 649M->649M(1024M) 0.874ms
+[20.579s][info][gc] GC(11) Pause Cleanup 651M->640M(1024M) 1.278ms
+[20.580s][info][gc] GC(11) Concurrent Cycle 176.272ms
+[23.215s][info][gc] GC(12) Pause Young (G1 Evacuation Pause) 721M->723M(1024M) 34.079ms
+[25.147s][info][gc] GC(13) Pause Initial Mark (G1 Evacuation Pause) 784M->786M(1024M) 27.393ms
+[25.148s][info][gc] GC(14) Concurrent Cycle
+[25.299s][info][gc] GC(14) Pause Remark 790M->790M(1024M) 0.852ms
+[25.370s][info][gc] GC(14) Pause Cleanup 792M->792M(1024M) 1.776ms
+[25.371s][info][gc] GC(14) Concurrent Cycle 223.442ms
+[26.524s][info][gc] GC(15) Pause Young (G1 Evacuation Pause) 828M->830M(1024M) 22.188ms
+[27.949s][info][gc] GC(16) Pause Initial Mark (G1 Evacuation Pause) 874M->876M(1024M) 19.817ms
+[27.949s][info][gc] GC(17) Concurrent Cycle
+[28.108s][info][gc] GC(17) Pause Remark 880M->880M(1024M) 0.941ms
+[28.191s][info][gc] GC(17) Pause Cleanup 883M->883M(1024M) 2.353ms
+[28.192s][info][gc] GC(17) Concurrent Cycle 242.670ms
+[29.165s][info][gc] GC(18) Pause Initial Mark (G1 Humongous Allocation) 912M->914M(1024M) 16.906ms
+[29.165s][info][gc] GC(19) Concurrent Cycle
+[29.403s][info][gc] GC(19) Pause Remark 933M->933M(1024M) 0.828ms
+[29.490s][info][gc] GC(19) Pause Cleanup 935M->935M(1024M) 3.051ms
+[29.491s][info][gc] GC(19) Concurrent Cycle 326.277ms
+[30.774s][info][gc] GC(20) To-space exhausted
+[30.774s][info][gc] GC(20) Pause Young (G1 Evacuation Pause) 975M->1024M(1024M) 20.246ms
+[30.792s][info][gc] GC(21) To-space exhausted
+[30.792s][info][gc] GC(21) Pause Initial Mark (G1 Evacuation Pause) 1024M->1024M(1024M) 17.933ms
+[30.792s][info][gc] GC(22) Concurrent Cycle
+[31.149s][info][gc] GC(23) Pause Full (Allocation Failure) 1024M->938M(1024M) 356.760ms
+[31.149s][info][gc] GC(22) Concurrent Cycle 357.510ms
+[32.801s][info][gc] GC(24) To-space exhausted
+[32.801s][info][gc] GC(24) Pause Young (G1 Evacuation Pause) 989M->1018M(1024M) 21.244ms
+[32.819s][info][gc] GC(25) To-space exhausted
+[32.820s][info][gc] GC(25) Pause Initial Mark (G1 Evacuation Pause) 1018M->1018M(1024M) 17.757ms
+[32.820s][info][gc] GC(26) Concurrent Cycle
+[33.112s][info][gc] GC(27) Pause Full (Allocation Failure) 1018M->989M(1024M) 291.771ms
+[33.112s][info][gc] GC(26) Concurrent Cycle 292.430ms
+[34.070s][info][gc] GC(28) To-space exhausted
+[34.070s][info][gc] GC(28) Pause Young (G1 Evacuation Pause) 1018M->1018M(1024M) 15.055ms
+[34.083s][info][gc] GC(29) Pause Initial Mark (G1 Evacuation Pause) 1018M->1018M(1024M) 12.832ms
+[34.083s][info][gc] GC(30) Concurrent Cycle
+[34.428s][info][gc] GC(31) Pause Full (Allocation Failure) 1018M->1018M(1024M) 344.707ms
+[34.428s][info][gc] GC(30) Concurrent Cycle 345.381ms
+[34.561s][info][gc] GC(32) To-space exhausted
+[34.561s][info][gc] GC(32) Pause Young (G1 Evacuation Pause) 1022M->1022M(1024M) 5.131ms
+[34.566s][info][gc] GC(33) Pause Initial Mark (G1 Evacuation Pause) 1022M->1022M(1024M) 4.304ms
+[34.566s][info][gc] GC(34) Concurrent Cycle
+[34.876s][info][gc] GC(35) Pause Full (Allocation Failure) 1022M->1022M(1024M) 309.824ms
+[34.876s][info][gc] GC(34) Concurrent Cycle 310.492ms
+[34.911s][info][gc] GC(36) To-space exhausted
+[34.911s][info][gc] GC(36) Pause Young (G1 Evacuation Pause) 1023M->1023M(1024M) 2.204ms
+[34.913s][info][gc] GC(37) Pause Initial Mark (G1 Evacuation Pause) 1023M->1023M(1024M) 1.667ms
+[34.913s][info][gc] GC(38) Concurrent Cycle
+[35.225s][info][gc] GC(39) Pause Full (Allocation Failure) 1023M->1023M(1024M) 311.361ms
+[35.520s][info][gc] GC(40) Pause Full (Allocation Failure) 1023M->1023M(1024M) 294.394ms
+[35.521s][info][gc] GC(41) Pause Young (G1 Evacuation Pause) 1023M->1023M(1024M) 0.558ms
+[35.521s][info][gc] GC(38) Concurrent Cycle 607.600ms
+[35.521s][info][gc] GC(42) Pause Young (G1 Evacuation Pause) 1023M->1023M(1024M) 0.213ms
+[35.816s][info][gc] GC(43) Pause Full (Allocation Failure) 1023M->1023M(1024M) 294.394ms
+[36.105s][info][gc] GC(44) Pause Full (Allocation Failure) 1023M->1023M(1024M) 288.358ms
+[36.106s][info][gc] GC(45) Pause Initial Mark (G1 Evacuation Pause) 1023M->1023M(1024M) 0.626ms
+[36.106s][info][gc] GC(46) Concurrent Cycle
+[36.106s][info][gc] GC(47) Pause Young (G1 Evacuation Pause) 1023M->1023M(1024M) 0.247ms
+[36.413s][info][gc] GC(48) Pause Full (Allocation Failure) 1023M->1023M(1024M) 307.022ms
+[36.717s][info][gc] GC(49) Pause Full (Allocation Failure) 1023M->1023M(1024M) 303.152ms
+[36.718s][info][gc] GC(46) Concurrent Cycle 611.812ms
+[36.718s][info][gc] GC(50) Pause Young (G1 Evacuation Pause) 1023M->1023M(1024M) 0.708ms
+[36.719s][info][gc] GC(51) Pause Initial Mark (G1 Evacuation Pause) 1023M->1023M(1024M) 0.451ms
+[36.719s][info][gc] GC(52) Concurrent Cycle
+[36.726s][info][gc] GC(53) Pause Full (Allocation Failure) 1023M->1M(1024M) 6.683ms
+[36.726s][info][gc] GC(52) Concurrent Cycle 7.143ms

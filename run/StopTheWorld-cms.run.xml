@@ -1,10 +1,10 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="LocalVarGC-diff-gc" type="Application" factoryName="Application">
+  <configuration default="false" name="StopTheWorld-cms" type="Application" factoryName="Application">
     <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.LocalVarGC" />
+    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.StopTheWorld" />
     <module name="jvm-learn" />
-    <option name="VM_PARAMETERS" value="-XX:+PrintGCDetails -XX:+PrintCommandLineFlags" />
+    <option name="VM_PARAMETERS" value="-Xmx1g -Xms1g -Xloggc:logs/gc2.log -XX:+PrintGCDetails -XX:+PrintCommandLineFlags -XX:+UseConcMarkSweepGC" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.gjh.learn.jvm.*" />
