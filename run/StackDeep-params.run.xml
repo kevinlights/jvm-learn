@@ -1,11 +1,11 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="StackDeep-params" type="Application" factoryName="Application" activateToolWindowBeforeRun="false">
-    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.StackDeep" />
+    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.gc.StackDeep" />
     <module name="jvm-learn" />
     <option name="VM_PARAMETERS" value="-Xss128K" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="com.gjh.learn.jvm.*" />
+        <option name="PATTERN" value="com.gjh.learn.jvm.gc.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>

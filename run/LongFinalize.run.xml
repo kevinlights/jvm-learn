@@ -1,11 +1,11 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="LongFinalize" type="Application" factoryName="Application" nameIsGenerated="true">
-    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.LongFinalize" />
+    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.gc.LongFinalize" />
     <module name="jvm-learn" />
     <option name="VM_PARAMETERS" value="-Xmx10m -Xms10m -XX:+PrintGCDetails -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=logs/f.dump" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="com.gjh.learn.jvm.*" />
+        <option name="PATTERN" value="com.gjh.learn.jvm.gc.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>

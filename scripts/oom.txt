@@ -42,6 +42,6 @@ Thread 14: (state = BLOCKED)
 
 
 Thread 4: (state = BLOCKED)
- - com.gjh.learn.jvm.DumpOOM.main(java.lang.String[]) @bci=19, line=14 (Interpreted frame)
+ - com.gjh.learn.jvm.gc.DumpOOM.main(java.lang.String[]) @bci=19, line=14 (Interpreted frame)
 
 

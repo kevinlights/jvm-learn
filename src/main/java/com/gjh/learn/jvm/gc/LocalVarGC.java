@@ -1,4 +1,4 @@
-package com.gjh.learn.jvm;
+package com.gjh.learn.jvm.gc;
 
 /**
  * created on 2021/3/20

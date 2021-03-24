@@ -1,11 +1,11 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="VMOptions-flags-final" type="Application" factoryName="Application" nameIsGenerated="false">
-    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.VMOptions" />
+  <configuration default="false" name="VMOptions-flags-final" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.gc.VMOptions" />
     <module name="jvm-learn" />
     <option name="VM_PARAMETERS" value="-XX:+PrintFlagsFinal" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="com.gjh.learn.jvm.*" />
+        <option name="PATTERN" value="com.gjh.learn.jvm.gc.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>

@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="UnloadClass-histogram" type="Application" factoryName="Application">
-    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.UnloadClass" />
+    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.gc.UnloadClass" />
     <module name="jvm-learn" />
     <option name="VM_PARAMETERS" value="-XX:+TraceClassUnloading -XX:+TraceClassLoading -XX:+PrintClassHistogram" />
     <method v="2">

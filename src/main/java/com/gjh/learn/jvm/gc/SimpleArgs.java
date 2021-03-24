@@ -1,4 +1,4 @@
-package com.gjh.learn.jvm;
+package com.gjh.learn.jvm.gc;
 
 import static com.gjh.learn.jvm.utils.LogUtil.*;
 /**

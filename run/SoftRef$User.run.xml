@@ -1,11 +1,11 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="SoftRef" type="Application" factoryName="Application" nameIsGenerated="true">
-    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.SoftRef" />
+    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.gc.SoftRef" />
     <module name="jvm-learn" />
     <option name="VM_PARAMETERS" value="-Xmx10m -XX:+PrintGCDetails" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="com.gjh.learn.jvm.*" />
+        <option name="PATTERN" value="com.gjh.learn.jvm.gc.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>

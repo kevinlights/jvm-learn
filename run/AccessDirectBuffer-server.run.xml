@@ -2,12 +2,12 @@
   <configuration default="false" name="AccessDirectBuffer-client" type="Application" factoryName="Application">
     <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.AccessDirectBuffer" />
+    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.gc.AccessDirectBuffer" />
     <module name="jvm-learn" />
     <option name="VM_PARAMETERS" value="-client" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="com.gjh.learn.jvm.*" />
+        <option name="PATTERN" value="com.gjh.learn.jvm.gc.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>

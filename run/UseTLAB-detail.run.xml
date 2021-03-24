@@ -1,11 +1,11 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="UseTLAB-detail" type="Application" factoryName="Application">
-    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.UseTLAB" />
+    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.gc.UseTLAB" />
     <module name="jvm-learn" />
     <option name="VM_PARAMETERS" value="-XX:+UseTLAB -Xcomp -XX:-BackgroundCompilation -XX:-DoEscapeAnalysis -server -XX:TLABSize=102400 -XX:+PrintTLAB -XX:-ResizeTLAB -XX:TLABRefillWasteFraction=100" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="com.gjh.learn.jvm.*" />
+        <option name="PATTERN" value="com.gjh.learn.jvm.gc.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>

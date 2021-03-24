@@ -1,16 +1,16 @@
-package com.gjh.learn.jvm;
+package com.gjh.learn.jvm.gc;
 
 import com.gjh.learn.jvm.utils.Print;
 
 import java.lang.ref.ReferenceQueue;
-import java.lang.ref.SoftReference;
+import java.lang.ref.WeakReference;
 
 /**
  * created on 2021/3/21
  *
  * @author kevinlights
  */
-public class SoftRefQueue {
+public class WeakRefQueue {
     public static class User {
         public int id;
         public String name;
@@ -32,10 +32,10 @@ public class SoftRefQueue {
     /**
      * 自定义软引用类，记录 User.uid
      */
-    public static class UserSoftReference extends SoftReference<User> {
+    public static class UserWeakReference extends WeakReference<User> {
         int uid;
 
-        public UserSoftReference(User referent, ReferenceQueue<? super User> q) {
+        public UserWeakReference(User referent, ReferenceQueue<? super User> q) {
             super(referent, q);
             uid = referent.id;
         }
@@ -44,16 +44,16 @@ public class SoftRefQueue {
     /**
      * 当给定的对象实例被回收时，会被加入此引用队列，通过访问该队列可以跟踪对象的回收情况
      */
-    static ReferenceQueue<User> softQueue = null;
+    static ReferenceQueue<User> weakQueue = null;
 
     public static class CheckRefQueue extends Thread {
         @Override
         public void run() {
             while (true) {
-                if (softQueue != null) {
-                    UserSoftReference obj = null;
+                if (weakQueue != null) {
+                    UserWeakReference obj = null;
                     try {
-                        obj = (UserSoftReference) softQueue.remove();
+                        obj = (UserWeakReference) weakQueue.remove();
                     } catch (InterruptedException e) {
                         Print.RED(e.toString());
                     }
@@ -83,20 +83,13 @@ public class SoftRefQueue {
         t.setDaemon(true);
         t.start();
         User u = new User(1, "kevin");
-        softQueue = new ReferenceQueue<User>();
-        UserSoftReference userSoftRef = new UserSoftReference(u, softQueue);
+        weakQueue = new ReferenceQueue<User>();
+        UserWeakReference userWeakRef = new UserWeakReference(u, weakQueue);
         u = null;
-        Print.GREEN(userSoftRef.get());
+        Print.GREEN(userWeakRef.get());
         System.gc();
         Print.BLUE("after gc");
-        Print.GREEN(userSoftRef.get());
-
-        Print.BLUE("try to create byte array and GC");
-        byte[] b = new byte[1024 * 910 * 7];
-        System.gc();
-        Print.BLUE("after gc");
-        Print.GREEN(userSoftRef.get());
-
+        Print.GREEN(userWeakRef.get());
         Thread.sleep(1000);
     }
 }

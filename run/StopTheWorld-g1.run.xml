@@ -2,12 +2,12 @@
   <configuration default="false" name="StopTheWorld-g1" type="Application" factoryName="Application">
     <option name="ALTERNATIVE_JRE_PATH" value="10" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.StopTheWorld" />
+    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.gc.StopTheWorld" />
     <module name="jvm-learn" />
     <option name="VM_PARAMETERS" value="-Xmx1g -Xms1g -Xloggc:logs/gc2.log -XX:+PrintGC -XX:+PrintCommandLineFlags" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="com.gjh.learn.jvm.*" />
+        <option name="PATTERN" value="com.gjh.learn.jvm.gc.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>

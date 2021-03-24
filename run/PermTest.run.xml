@@ -2,12 +2,12 @@
   <configuration default="false" name="PermTest" type="Application" factoryName="Application" nameIsGenerated="true">
     <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.PermTest" />
+    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.gc.PermTest" />
     <module name="jvm-learn" />
     <option name="VM_PARAMETERS" value="-XX:+PrintGCDetails -XX:MetaspaceSize=50M -XX:MaxMetaspaceSize=50m" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="com.gjh.learn.jvm.*" />
+        <option name="PATTERN" value="com.gjh.learn.jvm.gc.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>
