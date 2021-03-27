@@ -10,7 +10,7 @@ public class HoldCPUMain {
         @Override
         public void run() {
             while (true) {
-                double a = Math.random() * Math.random();// 占用 CPU
+                double a = Math.random() * Math.random() * Math.random();// 占用 CPU
             }
         }
     }

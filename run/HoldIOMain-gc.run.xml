@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="HoldIOMain-gc" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.thread.HoldIOMain" />
+    <module name="jvm-learn" />
+    <option name="VM_PARAMETERS" value="-XX:+UseG1GC -Xmx5m -XX:+PrintGCDetails" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.gjh.learn.jvm.thread.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
