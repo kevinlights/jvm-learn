@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LockEliminate-disabled" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.gjh.learn.jvm.lock.LockEliminate" />
+    <module name="jvm-learn" />
+    <option name="VM_PARAMETERS" value="-server -XX:+DoEscapeAnalysis -XX:-EliminateLocks -Xcomp -XX:-BackgroundCompilation -XX:BiasedLockingStartupDelay=0" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.gjh.learn.jvm.lock.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
