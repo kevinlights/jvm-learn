@@ -22,10 +22,10 @@ public class SecurityWeaveGenerator {
         byte[] codeData = cw.toByteArray();
 
         // create directory first
-        File dir = new File("target/" + className.substring(0, className.lastIndexOf(".")).replaceAll("\\.", "/"));
-        dir.mkdirs();
-        File file = new File("target/" + className.replaceAll("\\.", "/") + ".class");
-
+        // File dir = new File("target/" + className.substring(0, className.lastIndexOf(".")).replaceAll("\\.", "/"));
+        // dir.mkdirs();
+        File file = new File("./target/classes/" + className.replaceAll("\\.", "/") + ".class");
+        System.out.println(file.canWrite());
         FileOutputStream fos = new FileOutputStream(file);
         fos.write(codeData);
         fos.close();

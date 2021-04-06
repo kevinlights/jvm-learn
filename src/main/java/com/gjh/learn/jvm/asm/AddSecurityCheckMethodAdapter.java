@@ -17,10 +17,11 @@ public class AddSecurityCheckMethodAdapter extends MethodVisitor {
     @Override
     public void visitCode() {
         Label continueLabel = new Label();
-        visitMethodInsn(Opcodes.INVOKESTATIC, "com.gjh.learn.jvm.asm.SecurityChecker", "checkSecurity", "()Z", true);
+        visitMethodInsn(Opcodes.INVOKESTATIC, "com/gjh/learn/jvm/asm/SecurityChecker", "checkSecurity", "()Z", true);
         visitJumpInsn(Opcodes.IFNE, continueLabel);
         visitInsn(Opcodes.RETURN);
         visitLabel(continueLabel);
+        System.out.println("visitCode successfully");
         super.visitCode();
     }
 }
