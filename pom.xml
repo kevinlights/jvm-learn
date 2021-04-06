@@ -18,10 +18,11 @@
                     <target>1.8</target>
                     <encoding>UTF-8</encoding>
                     <compilerArguments>
-                        <bootclasspath>${java.home}/lib/rt.jar</bootclasspath>
+                        <bootclasspath>${java.home}/lib/rt.jar;${java.home}/lib/tools.jar</bootclasspath>
                     </compilerArguments>
                     <excludes>
                         <exclude>com/gjh/learn/jvm/memory/OQLDumpAnalysis.java</exclude>
+                        <exclude>com/gjh/learn/jvm/agent/AttachToolMain.java</exclude>
                     </excludes>
                 </configuration>
             </plugin>
@@ -34,6 +35,9 @@
                         <manifestEntries>
                             <!--<Premain-Class>com.gjh.learn.jvm.agent.PreMainTraceAgent</Premain-Class>-->
                             <Premain-Class>com.gjh.learn.jvm.agent.PreMainAddTimeStatAgent</Premain-Class>
+                            <Agent-Class>com.gjh.learn.jvm.agent.PreMainAddTimeStatAgent</Agent-Class>
+                            <Can-Retransform-Classes>true</Can-Retransform-Classes>
+                            <Can-Redline-Classes>true</Can-Redline-Classes>
                         </manifestEntries>
                     </archive>
                 </configuration>
