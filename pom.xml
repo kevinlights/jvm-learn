@@ -25,6 +25,19 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <manifestEntries>
+                            <!--<Premain-Class>com.gjh.learn.jvm.agent.PreMainTraceAgent</Premain-Class>-->
+                            <Premain-Class>com.gjh.learn.jvm.agent.PreMainAddTimeStatAgent</Premain-Class>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
