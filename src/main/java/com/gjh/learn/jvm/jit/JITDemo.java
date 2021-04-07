@@ -49,6 +49,28 @@ public class JITDemo {
         }
     }
 
+    public void switchMethod(int i) {
+        // tableswitch
+        switch(i) {
+            case 1: break;
+            case 2: break;
+            case 5: break;
+            default:
+                System.out.println("");
+        }
+    }
+
+    public void switchMethod2(int i) {
+        // lookupswitch
+        switch(i) {
+            case 1: break;
+            case 20: break;
+            case 50: break;
+            default:
+                System.out.println("");
+        }
+    }
+
     public static void main(String[] args) {
         createString();
     }
